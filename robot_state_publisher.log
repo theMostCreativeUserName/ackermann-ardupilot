@@ -1,0 +1,24 @@
+[WARN] [1741790846.006973967] [sdformat_urdf]: SDFormat link [base_link] has a <sensor>, but URDF does not support this
+[WARN] [1741790846.007124457] [sdformat_urdf]: SDFormat link [sonar_mid_b] has a <sensor>, but URDF does not support this
+[WARN] [1741790846.007134500] [sdformat_urdf]: SDFormat link [sonar_l] has a <sensor>, but URDF does not support this
+[WARN] [1741790846.007142401] [sdformat_urdf]: SDFormat link [sonar_rb] has a <sensor>, but URDF does not support this
+[WARN] [1741790846.007149767] [sdformat_urdf]: SDFormat link [sonar_r] has a <sensor>, but URDF does not support this
+[WARN] [1741790846.007157852] [sdformat_urdf]: SDFormat link [sonar_lb] has a <sensor>, but URDF does not support this
+[WARN] [1741790846.007164870] [sdformat_urdf]: SDFormat link [lidar] has a <sensor>, but URDF does not support this
+[WARN] [1741790846.007172076] [sdformat_urdf]: SDFormat link [camera] has a <sensor>, but URDF does not support this
+[WARN] [1741790846.019114982] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[INFO] [1741790846.019282409] [robot_state_publisher]: got segment base_link
+[INFO] [1741790846.019360467] [robot_state_publisher]: got segment camera
+[INFO] [1741790846.019366549] [robot_state_publisher]: got segment lidar
+[INFO] [1741790846.019369061] [robot_state_publisher]: got segment sonar_l
+[INFO] [1741790846.019371476] [robot_state_publisher]: got segment sonar_lb
+[INFO] [1741790846.019373478] [robot_state_publisher]: got segment sonar_mid_b
+[INFO] [1741790846.019375641] [robot_state_publisher]: got segment sonar_r
+[INFO] [1741790846.019377612] [robot_state_publisher]: got segment sonar_rb
+[INFO] [1741790846.019379612] [robot_state_publisher]: got segment steering_left
+[INFO] [1741790846.019381851] [robot_state_publisher]: got segment steering_right
+[INFO] [1741790846.019384044] [robot_state_publisher]: got segment wheel_lb
+[INFO] [1741790846.019386022] [robot_state_publisher]: got segment wheel_lf
+[INFO] [1741790846.019388099] [robot_state_publisher]: got segment wheel_rb
+[INFO] [1741790846.019390412] [robot_state_publisher]: got segment wheel_rf
+[INFO] [1741791100.800208037] [rclcpp]: signal_handler(signum=2)

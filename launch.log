@@ -1,568 +1,334 @@
-1741789485.0113909 [INFO] [launch]: All log files can be found below /home/pascal/.ros/log/2025-03-12-15-24-45-010419-DESKTOP-I5L32EL-20131
-1741789485.0115199 [INFO] [launch]: Default logging verbosity is set to INFO
-1741789519.9998770 [INFO] [ruby $(which gz) sim-1]: process started with pid [20149]
-1741789520.0000293 [INFO] [ruby $(which gz) sim-2]: process started with pid [20151]
-1741789520.0001192 [INFO] [micro_ros_agent-3]: process started with pid [20153]
-1741789520.0001953 [INFO] [dds_udp.parm --synthetic-clock -4]: process started with pid [20155]
-1741789520.0002546 [INFO] [mavproxy.py -5]: process started with pid [20157]
-1741789520.0003295 [INFO] [robot_state_publisher-6]: process started with pid [20159]
-1741789520.0003912 [INFO] [parameter_bridge-7]: process started with pid [20161]
-1741789520.0004528 [INFO] [rviz2-8]: process started with pid [20163]
-1741789520.1326487 [INFO] [relay-9]: process started with pid [20165]
-1741789520.8296881 [dds_udp.parm --synthetic-clock -4] Setting SIM_SPEEDUP=1.000000
-1741789520.8298395 [dds_udp.parm --synthetic-clock -4] Ignoring stale command-line parameter '-S'Starting SITL: JSON
-1741789520.8309481 [dds_udp.parm --synthetic-clock -4] JSON control interface set to 127.0.0.1:9002
-1741789520.8310618 [dds_udp.parm --synthetic-clock -4] Starting sketch 'Rover'
-1741789520.8311095 [dds_udp.parm --synthetic-clock -4] Starting SITL input
-1741789520.8311586 [dds_udp.parm --synthetic-clock -4] Using Irlock at port : 9005
-1741789520.8313365 [dds_udp.parm --synthetic-clock -4] bind port 5760 for SERIAL0
-1741789520.8314025 [dds_udp.parm --synthetic-clock -4] bind failed on port 5760 - Address already in use
-1741789520.8330731 [ERROR] [dds_udp.parm --synthetic-clock -4]: process has died [pid 20155, exit code 1, cmd 'ardurover --model json --speedup 1 --slave 0 --sim-address=127.0.0.1 --instance 0 --defaults /mnt/h/plattform/install/ardupilot_sitl/share/ardupilot_sitl/config/default_params/rover.parm,/mnt/h/plattform/install/ardupilot_sitl/share/ardupilot_sitl/config/default_params/dds_udp.parm --synthetic-clock '].
-1741789520.8789937 [micro_ros_agent-3] [35m[1741789520.878735][m info     | [34mUDPv4AgentLinux.cpp[m | [37minit                    [m | [32mrunning...[m             | port: 2019
-1741789520.8794205 [micro_ros_agent-3] [35m[1741789520.879245][m info     | [34mRoot.cpp          [m | [37mset_verbose_level       [m | [32mlogger setup[m           | verbose_level: 4
-1741789521.5817535 [rviz2-8] QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700
-1741789521.7646759 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_mid_b"]/sensor[@name="sonar_mid_b_sensor"]/gz_frame_id:<data-string>:L264]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789521.7664819 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_l"]/sensor[@name="sonar_l_sensor"]/gz_frame_id:<data-string>:L335]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789521.7682374 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_rb"]/sensor[@name="sonar_rb_sensor"]/gz_frame_id:<data-string>:L402]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789521.7699153 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_r"]/sensor[@name="sonar_r_sensor"]/gz_frame_id:<data-string>:L468]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789521.7720904 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_lb"]/sensor[@name="sonar_lb_sensor"]/gz_frame_id:<data-string>:L535]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789521.7875736 [robot_state_publisher-6] [WARN] [1741789521.787335081] [sdformat_urdf]: SDFormat link [base_link] has a <sensor>, but URDF does not support this
-1741789521.7879369 [robot_state_publisher-6] [WARN] [1741789521.787487231] [sdformat_urdf]: SDFormat link [sonar_mid_b] has a <sensor>, but URDF does not support this
-1741789521.7880404 [robot_state_publisher-6] [WARN] [1741789521.787500759] [sdformat_urdf]: SDFormat link [sonar_l] has a <sensor>, but URDF does not support this
-1741789521.7880943 [robot_state_publisher-6] [WARN] [1741789521.787511064] [sdformat_urdf]: SDFormat link [sonar_rb] has a <sensor>, but URDF does not support this
-1741789521.7881401 [robot_state_publisher-6] [WARN] [1741789521.787518572] [sdformat_urdf]: SDFormat link [sonar_r] has a <sensor>, but URDF does not support this
-1741789521.7881782 [robot_state_publisher-6] [WARN] [1741789521.787525917] [sdformat_urdf]: SDFormat link [sonar_lb] has a <sensor>, but URDF does not support this
-1741789521.7882161 [robot_state_publisher-6] [WARN] [1741789521.787533119] [sdformat_urdf]: SDFormat link [lidar] has a <sensor>, but URDF does not support this
-1741789521.7882526 [robot_state_publisher-6] [WARN] [1741789521.787541140] [sdformat_urdf]: SDFormat link [camera] has a <sensor>, but URDF does not support this
-1741789521.7993860 [robot_state_publisher-6] [WARN] [1741789521.799091728] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
-1741789521.7999761 [robot_state_publisher-6] [INFO] [1741789521.799316366] [robot_state_publisher]: got segment base_link
-1741789521.8001189 [robot_state_publisher-6] [INFO] [1741789521.799408077] [robot_state_publisher]: got segment camera
-1741789521.8002017 [robot_state_publisher-6] [INFO] [1741789521.799413985] [robot_state_publisher]: got segment lidar
-1741789521.8002689 [robot_state_publisher-6] [INFO] [1741789521.799416841] [robot_state_publisher]: got segment sonar_l
-1741789521.8003452 [robot_state_publisher-6] [INFO] [1741789521.799418961] [robot_state_publisher]: got segment sonar_lb
-1741789521.8004005 [robot_state_publisher-6] [INFO] [1741789521.799421078] [robot_state_publisher]: got segment sonar_mid_b
-1741789521.8004777 [robot_state_publisher-6] [INFO] [1741789521.799423178] [robot_state_publisher]: got segment sonar_r
-1741789521.8005555 [robot_state_publisher-6] [INFO] [1741789521.799425260] [robot_state_publisher]: got segment sonar_rb
-1741789521.8006275 [robot_state_publisher-6] [INFO] [1741789521.799427253] [robot_state_publisher]: got segment steering_left
-1741789521.8006840 [robot_state_publisher-6] [INFO] [1741789521.799429618] [robot_state_publisher]: got segment steering_right
-1741789521.8007603 [robot_state_publisher-6] [INFO] [1741789521.799431631] [robot_state_publisher]: got segment wheel_lb
-1741789521.8008339 [robot_state_publisher-6] [INFO] [1741789521.799433610] [robot_state_publisher]: got segment wheel_lf
-1741789521.8008885 [robot_state_publisher-6] [INFO] [1741789521.799435936] [robot_state_publisher]: got segment wheel_rb
-1741789521.8009560 [robot_state_publisher-6] [INFO] [1741789521.799438225] [robot_state_publisher]: got segment wheel_rf
-1741789523.9370260 [rviz2-8] [INFO] [1741789523.936665883] [rviz2]: Stereo is NOT SUPPORTED
-1741789523.9378004 [rviz2-8] [INFO] [1741789523.937077854] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
-1741789524.2550607 [rviz2-8] [INFO] [1741789524.254817673] [rviz2]: Stereo is NOT SUPPORTED
-1741789531.2734473 [mavproxy.py -5] Connect tcp:127.0.0.1:5760 source_system=255
-1741789531.2735901 [mavproxy.py -5] Log Directory: 
-1741789531.2736440 [mavproxy.py -5] Telemetry log: mav.tlog
-1741789531.2736869 [mavproxy.py -5] Waiting for heartbeat from tcp:127.0.0.1:5760
-1741789531.2737267 [mavproxy.py -5] link 1 down
-1741789533.9362354 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_mid_b"]/sensor[@name="sonar_mid_b_sensor"]/gz_frame_id:<data-string>:L264]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789533.9380815 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_l"]/sensor[@name="sonar_l_sensor"]/gz_frame_id:<data-string>:L335]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789533.9400182 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_rb"]/sensor[@name="sonar_rb_sensor"]/gz_frame_id:<data-string>:L402]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789533.9418774 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_r"]/sensor[@name="sonar_r_sensor"]/gz_frame_id:<data-string>:L468]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789533.9444306 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="ackermann_model"]/link[@name="sonar_lb"]/sensor[@name="sonar_lb_sensor"]/gz_frame_id:<data-string>:L535]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-1741789533.9618275 [rviz2-8] [WARN] [1741789533.961490365] [sdformat_urdf]: SDFormat link [base_link] has a <sensor>, but URDF does not support this
-1741789533.9622953 [rviz2-8] [WARN] [1741789533.961755797] [sdformat_urdf]: SDFormat link [sonar_mid_b] has a <sensor>, but URDF does not support this
-1741789533.9623945 [rviz2-8] [WARN] [1741789533.961767566] [sdformat_urdf]: SDFormat link [sonar_l] has a <sensor>, but URDF does not support this
-1741789533.9624414 [rviz2-8] [WARN] [1741789533.961777199] [sdformat_urdf]: SDFormat link [sonar_rb] has a <sensor>, but URDF does not support this
-1741789533.9625068 [rviz2-8] [WARN] [1741789533.961784715] [sdformat_urdf]: SDFormat link [sonar_r] has a <sensor>, but URDF does not support this
-1741789533.9625661 [rviz2-8] [WARN] [1741789533.961792319] [sdformat_urdf]: SDFormat link [sonar_lb] has a <sensor>, but URDF does not support this
-1741789533.9626114 [rviz2-8] [WARN] [1741789533.961800296] [sdformat_urdf]: SDFormat link [lidar] has a <sensor>, but URDF does not support this
-1741789533.9626603 [rviz2-8] [WARN] [1741789533.961808262] [sdformat_urdf]: SDFormat link [camera] has a <sensor>, but URDF does not support this
-1741789568.7822549 [rviz2-8] [INFO] [1741789568.782001908] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 23.400 for reason 'discarding message because the queue is full'
-1741789568.9426517 [rviz2-8] [INFO] [1741789568.942347286] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 23.500 for reason 'discarding message because the queue is full'
-1741789569.1341090 [rviz2-8] [INFO] [1741789569.133782703] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 23.600 for reason 'discarding message because the queue is full'
-1741789569.2944565 [rviz2-8] [INFO] [1741789569.294055197] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 23.700 for reason 'discarding message because the queue is full'
-1741789569.4868481 [rviz2-8] [INFO] [1741789569.486393525] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 23.800 for reason 'discarding message because the queue is full'
-1741789569.6785347 [rviz2-8] [INFO] [1741789569.678267337] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 23.900 for reason 'discarding message because the queue is full'
-1741789569.8707016 [rviz2-8] [INFO] [1741789569.870479996] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.000 for reason 'discarding message because the queue is full'
-1741789570.0308239 [rviz2-8] [INFO] [1741789570.030264262] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.100 for reason 'discarding message because the queue is full'
-1741789570.2231145 [rviz2-8] [INFO] [1741789570.222862802] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.200 for reason 'discarding message because the queue is full'
-1741789570.4147890 [rviz2-8] [INFO] [1741789570.414430298] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.300 for reason 'discarding message because the queue is full'
-1741789570.5747812 [rviz2-8] [INFO] [1741789570.574407549] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.400 for reason 'discarding message because the queue is full'
-1741789570.7670114 [rviz2-8] [INFO] [1741789570.766795744] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.500 for reason 'discarding message because the queue is full'
-1741789570.9908779 [rviz2-8] [INFO] [1741789570.990581705] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.600 for reason 'discarding message because the queue is full'
-1741789571.1827669 [rviz2-8] [INFO] [1741789571.182536795] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.700 for reason 'discarding message because the queue is full'
-1741789571.3746657 [rviz2-8] [INFO] [1741789571.374439304] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.800 for reason 'discarding message because the queue is full'
-1741789571.5342259 [rviz2-8] [INFO] [1741789571.534008683] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 24.900 for reason 'discarding message because the queue is full'
-1741789571.7583914 [rviz2-8] [INFO] [1741789571.758164766] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.000 for reason 'discarding message because the queue is full'
-1741789571.9509981 [rviz2-8] [INFO] [1741789571.950722769] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.100 for reason 'discarding message because the queue is full'
-1741789572.1109486 [rviz2-8] [INFO] [1741789572.110655211] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.200 for reason 'discarding message because the queue is full'
-1741789572.3031859 [rviz2-8] [INFO] [1741789572.302833922] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.300 for reason 'discarding message because the queue is full'
-1741789572.5265133 [rviz2-8] [INFO] [1741789572.526217395] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.400 for reason 'discarding message because the queue is full'
-1741789572.7188311 [rviz2-8] [INFO] [1741789572.718602102] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.500 for reason 'discarding message because the queue is full'
-1741789572.8784788 [rviz2-8] [INFO] [1741789572.878221910] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.600 for reason 'discarding message because the queue is full'
-1741789573.0711567 [rviz2-8] [INFO] [1741789573.070843022] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.700 for reason 'discarding message because the queue is full'
-1741789573.2629650 [rviz2-8] [INFO] [1741789573.262731158] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.800 for reason 'discarding message because the queue is full'
-1741789573.4545197 [rviz2-8] [INFO] [1741789573.454309999] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 25.900 for reason 'discarding message because the queue is full'
-1741789573.6468832 [rviz2-8] [INFO] [1741789573.646689674] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.000 for reason 'discarding message because the queue is full'
-1741789573.8385470 [rviz2-8] [INFO] [1741789573.838247570] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.100 for reason 'discarding message because the queue is full'
-1741789574.0624287 [rviz2-8] [INFO] [1741789574.062163225] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.200 for reason 'discarding message because the queue is full'
-1741789574.2860639 [rviz2-8] [INFO] [1741789574.285830410] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.300 for reason 'discarding message because the queue is full'
-1741789574.4785502 [rviz2-8] [INFO] [1741789574.478339837] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.400 for reason 'discarding message because the queue is full'
-1741789574.6709933 [rviz2-8] [INFO] [1741789574.670658102] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.500 for reason 'discarding message because the queue is full'
-1741789574.9268491 [rviz2-8] [INFO] [1741789574.926480241] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.600 for reason 'discarding message because the queue is full'
-1741789575.1194847 [rviz2-8] [INFO] [1741789575.118885729] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.700 for reason 'discarding message because the queue is full'
-1741789575.3110745 [rviz2-8] [INFO] [1741789575.310752399] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.800 for reason 'discarding message because the queue is full'
-1741789575.5345941 [rviz2-8] [INFO] [1741789575.534308891] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 26.900 for reason 'discarding message because the queue is full'
-1741789575.7586248 [rviz2-8] [INFO] [1741789575.758137066] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.000 for reason 'discarding message because the queue is full'
-1741789575.9824717 [rviz2-8] [INFO] [1741789575.982225698] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.100 for reason 'discarding message because the queue is full'
-1741789576.1744914 [rviz2-8] [INFO] [1741789576.174263504] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.200 for reason 'discarding message because the queue is full'
-1741789576.3664730 [rviz2-8] [INFO] [1741789576.366161660] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.300 for reason 'discarding message because the queue is full'
-1741789576.6547034 [rviz2-8] [INFO] [1741789576.654341116] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.400 for reason 'discarding message because the queue is full'
-1741789576.9103756 [rviz2-8] [INFO] [1741789576.909939245] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.500 for reason 'discarding message because the queue is full'
-1741789577.1350148 [rviz2-8] [INFO] [1741789577.134651625] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.600 for reason 'discarding message because the queue is full'
-1741789577.3262796 [rviz2-8] [INFO] [1741789577.326038212] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.700 for reason 'discarding message because the queue is full'
-1741789577.5510881 [rviz2-8] [INFO] [1741789577.550729727] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.800 for reason 'discarding message because the queue is full'
-1741789577.7749689 [rviz2-8] [INFO] [1741789577.774683750] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 27.900 for reason 'discarding message because the queue is full'
-1741789577.9993715 [rviz2-8] [INFO] [1741789577.998967071] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.000 for reason 'discarding message because the queue is full'
-1741789578.2544732 [rviz2-8] [INFO] [1741789578.254090871] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.100 for reason 'discarding message because the queue is full'
-1741789578.4783463 [rviz2-8] [INFO] [1741789578.478140141] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.200 for reason 'discarding message because the queue is full'
-1741789578.7026882 [rviz2-8] [INFO] [1741789578.702274611] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.300 for reason 'discarding message because the queue is full'
-1741789578.9270499 [rviz2-8] [INFO] [1741789578.926832522] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.400 for reason 'discarding message because the queue is full'
-1741789579.1509740 [rviz2-8] [INFO] [1741789579.150742225] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.500 for reason 'discarding message because the queue is full'
-1741789579.3748999 [rviz2-8] [INFO] [1741789579.374569352] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.600 for reason 'discarding message because the queue is full'
-1741789579.6307933 [rviz2-8] [INFO] [1741789579.630435854] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.700 for reason 'discarding message because the queue is full'
-1741789579.8224235 [rviz2-8] [INFO] [1741789579.822103143] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.800 for reason 'discarding message because the queue is full'
-1741789580.0781202 [rviz2-8] [INFO] [1741789580.077908947] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 28.900 for reason 'discarding message because the queue is full'
-1741789580.3031795 [rviz2-8] [INFO] [1741789580.302811555] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.000 for reason 'discarding message because the queue is full'
-1741789580.5268602 [rviz2-8] [INFO] [1741789580.526628827] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.100 for reason 'discarding message because the queue is full'
-1741789580.7828674 [rviz2-8] [INFO] [1741789580.782641242] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.200 for reason 'discarding message because the queue is full'
-1741789581.0066245 [rviz2-8] [INFO] [1741789581.006417851] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.300 for reason 'discarding message because the queue is full'
-1741789581.2304661 [rviz2-8] [INFO] [1741789581.230197388] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.400 for reason 'discarding message because the queue is full'
-1741789581.4546268 [rviz2-8] [INFO] [1741789581.454414725] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.500 for reason 'discarding message because the queue is full'
-1741789581.6473258 [rviz2-8] [INFO] [1741789581.647012344] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.600 for reason 'discarding message because the queue is full'
-1741789581.8713617 [rviz2-8] [INFO] [1741789581.870956285] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.700 for reason 'discarding message because the queue is full'
-1741789582.0945776 [rviz2-8] [INFO] [1741789582.094338369] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.800 for reason 'discarding message because the queue is full'
-1741789582.3187931 [rviz2-8] [INFO] [1741789582.318579804] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 29.900 for reason 'discarding message because the queue is full'
-1741789582.5422907 [rviz2-8] [INFO] [1741789582.541980377] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.000 for reason 'discarding message because the queue is full'
-1741789583.6940160 [rviz2-8] [INFO] [1741789583.693742380] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.100 for reason 'discarding message because the queue is full'
-1741789583.9503963 [rviz2-8] [INFO] [1741789583.950105550] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.200 for reason 'discarding message because the queue is full'
-1741789584.1749139 [rviz2-8] [INFO] [1741789584.174613249] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.300 for reason 'discarding message because the queue is full'
-1741789584.3989556 [rviz2-8] [INFO] [1741789584.398634760] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.400 for reason 'discarding message because the queue is full'
-1741789584.6225286 [rviz2-8] [INFO] [1741789584.622292604] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.500 for reason 'discarding message because the queue is full'
-1741789584.8786607 [rviz2-8] [INFO] [1741789584.878454474] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.600 for reason 'discarding message because the queue is full'
-1741789585.1019442 [rviz2-8] [INFO] [1741789585.101737551] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.700 for reason 'discarding message because the queue is full'
-1741789585.3263440 [rviz2-8] [INFO] [1741789585.326160270] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.800 for reason 'discarding message because the queue is full'
-1741789585.5499249 [rviz2-8] [INFO] [1741789585.549690578] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 30.900 for reason 'discarding message because the queue is full'
-1741789585.7744901 [rviz2-8] [INFO] [1741789585.774288427] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.000 for reason 'discarding message because the queue is full'
-1741789585.9981565 [rviz2-8] [INFO] [1741789585.997781260] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.100 for reason 'discarding message because the queue is full'
-1741789586.1902552 [rviz2-8] [INFO] [1741789586.190037453] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.200 for reason 'discarding message because the queue is full'
-1741789586.4147441 [rviz2-8] [INFO] [1741789586.414543438] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.300 for reason 'discarding message because the queue is full'
-1741789586.6388657 [rviz2-8] [INFO] [1741789586.638607489] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.400 for reason 'discarding message because the queue is full'
-1741789586.8307159 [rviz2-8] [INFO] [1741789586.830403505] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.500 for reason 'discarding message because the queue is full'
-1741789586.9908099 [rviz2-8] [INFO] [1741789586.990390369] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.600 for reason 'discarding message because the queue is full'
-1741789587.1506507 [rviz2-8] [INFO] [1741789587.150368394] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.700 for reason 'discarding message because the queue is full'
-1741789587.3422391 [rviz2-8] [INFO] [1741789587.342035125] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.800 for reason 'discarding message because the queue is full'
-1741789587.5018873 [rviz2-8] [INFO] [1741789587.501662750] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 31.900 for reason 'discarding message because the queue is full'
-1741789587.6627951 [rviz2-8] [INFO] [1741789587.662619888] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.000 for reason 'discarding message because the queue is full'
-1741789587.8228366 [rviz2-8] [INFO] [1741789587.822618292] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.100 for reason 'discarding message because the queue is full'
-1741789587.9826784 [rviz2-8] [INFO] [1741789587.982466462] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.200 for reason 'discarding message because the queue is full'
-1741789588.1431091 [rviz2-8] [INFO] [1741789588.142646980] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.300 for reason 'discarding message because the queue is full'
-1741789588.3021002 [rviz2-8] [INFO] [1741789588.301796121] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.400 for reason 'discarding message because the queue is full'
-1741789588.4944937 [rviz2-8] [INFO] [1741789588.494244683] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.500 for reason 'discarding message because the queue is full'
-1741789588.6545632 [rviz2-8] [INFO] [1741789588.654359734] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.600 for reason 'discarding message because the queue is full'
-1741789588.8142571 [rviz2-8] [INFO] [1741789588.814033962] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.700 for reason 'discarding message because the queue is full'
-1741789588.9750464 [rviz2-8] [INFO] [1741789588.974746850] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.800 for reason 'discarding message because the queue is full'
-1741789589.1346083 [rviz2-8] [INFO] [1741789589.134359890] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 32.900 for reason 'discarding message because the queue is full'
-1741789589.3262362 [rviz2-8] [INFO] [1741789589.325976750] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.000 for reason 'discarding message because the queue is full'
-1741789589.5181639 [rviz2-8] [INFO] [1741789589.517933751] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.100 for reason 'discarding message because the queue is full'
-1741789589.6792228 [rviz2-8] [INFO] [1741789589.678804020] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.200 for reason 'discarding message because the queue is full'
-1741789589.8707733 [rviz2-8] [INFO] [1741789589.870573401] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.300 for reason 'discarding message because the queue is full'
-1741789590.0630648 [rviz2-8] [INFO] [1741789590.062661273] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.400 for reason 'discarding message because the queue is full'
-1741789590.2231946 [rviz2-8] [INFO] [1741789590.222812683] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.500 for reason 'discarding message because the queue is full'
-1741789590.4149132 [rviz2-8] [INFO] [1741789590.414595593] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.600 for reason 'discarding message because the queue is full'
-1741789590.6065409 [rviz2-8] [INFO] [1741789590.606340448] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.700 for reason 'discarding message because the queue is full'
-1741789590.7984653 [rviz2-8] [INFO] [1741789590.798220309] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.800 for reason 'discarding message because the queue is full'
-1741789590.9901092 [rviz2-8] [INFO] [1741789590.989904057] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 33.900 for reason 'discarding message because the queue is full'
-1741789591.1511025 [rviz2-8] [INFO] [1741789591.150703241] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.000 for reason 'discarding message because the queue is full'
-1741789591.3424916 [rviz2-8] [INFO] [1741789591.342291549] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.100 for reason 'discarding message because the queue is full'
-1741789591.5343215 [rviz2-8] [INFO] [1741789591.533996400] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.200 for reason 'discarding message because the queue is full'
-1741789591.6950746 [rviz2-8] [INFO] [1741789591.694643328] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.300 for reason 'discarding message because the queue is full'
-1741789591.8546674 [rviz2-8] [INFO] [1741789591.854480566] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.400 for reason 'discarding message because the queue is full'
-1741789592.0467813 [rviz2-8] [INFO] [1741789592.046451644] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.500 for reason 'discarding message because the queue is full'
-1741789592.2386243 [rviz2-8] [INFO] [1741789592.238379814] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.600 for reason 'discarding message because the queue is full'
-1741789592.3979902 [rviz2-8] [INFO] [1741789592.397793770] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.700 for reason 'discarding message because the queue is full'
-1741789592.5582972 [rviz2-8] [INFO] [1741789592.558045443] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.800 for reason 'discarding message because the queue is full'
-1741789592.7191885 [rviz2-8] [INFO] [1741789592.718745367] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 34.900 for reason 'discarding message because the queue is full'
-1741789592.9103498 [rviz2-8] [INFO] [1741789592.910075859] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.000 for reason 'discarding message because the queue is full'
-1741789593.0704339 [rviz2-8] [INFO] [1741789593.070237928] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.100 for reason 'discarding message because the queue is full'
-1741789593.2619183 [rviz2-8] [INFO] [1741789593.261681139] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.200 for reason 'discarding message because the queue is full'
-1741789593.4226539 [rviz2-8] [INFO] [1741789593.422247548] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.300 for reason 'discarding message because the queue is full'
-1741789593.6139877 [rviz2-8] [INFO] [1741789593.613780039] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.400 for reason 'discarding message because the queue is full'
-1741789593.7747090 [rviz2-8] [INFO] [1741789593.774412294] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.500 for reason 'discarding message because the queue is full'
-1741789593.9659910 [rviz2-8] [INFO] [1741789593.965804043] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.600 for reason 'discarding message because the queue is full'
-1741789594.1259451 [rviz2-8] [INFO] [1741789594.125663122] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.700 for reason 'discarding message because the queue is full'
-1741789594.3179452 [rviz2-8] [INFO] [1741789594.317740662] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.800 for reason 'discarding message because the queue is full'
-1741789594.4786155 [rviz2-8] [INFO] [1741789594.478300498] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 35.900 for reason 'discarding message because the queue is full'
-1741789594.6709707 [rviz2-8] [INFO] [1741789594.670712253] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.000 for reason 'discarding message because the queue is full'
-1741789594.8308055 [rviz2-8] [INFO] [1741789594.830594114] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.100 for reason 'discarding message because the queue is full'
-1741789595.0227268 [rviz2-8] [INFO] [1741789595.022528085] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.200 for reason 'discarding message because the queue is full'
-1741789595.1824241 [rviz2-8] [INFO] [1741789595.182109140] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.300 for reason 'discarding message because the queue is full'
-1741789595.3429141 [rviz2-8] [INFO] [1741789595.342678329] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.400 for reason 'discarding message because the queue is full'
-1741789595.5347471 [rviz2-8] [INFO] [1741789595.534564727] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.500 for reason 'discarding message because the queue is full'
-1741789595.7268410 [rviz2-8] [INFO] [1741789595.726472555] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.600 for reason 'discarding message because the queue is full'
-1741789595.8868427 [rviz2-8] [INFO] [1741789595.886565902] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.700 for reason 'discarding message because the queue is full'
-1741789596.0464571 [rviz2-8] [INFO] [1741789596.046215576] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.800 for reason 'discarding message because the queue is full'
-1741789596.2704821 [rviz2-8] [INFO] [1741789596.270162691] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 36.900 for reason 'discarding message because the queue is full'
-1741789596.4625237 [rviz2-8] [INFO] [1741789596.462278925] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.000 for reason 'discarding message because the queue is full'
-1741789596.6544571 [rviz2-8] [INFO] [1741789596.654245527] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.100 for reason 'discarding message because the queue is full'
-1741789596.8787651 [rviz2-8] [INFO] [1741789596.878388341] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.200 for reason 'discarding message because the queue is full'
-1741789597.0707793 [rviz2-8] [INFO] [1741789597.070489512] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.300 for reason 'discarding message because the queue is full'
-1741789597.2950115 [rviz2-8] [INFO] [1741789597.294758322] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.400 for reason 'discarding message because the queue is full'
-1741789597.4866045 [rviz2-8] [INFO] [1741789597.486238685] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.500 for reason 'discarding message because the queue is full'
-1741789597.6460726 [rviz2-8] [INFO] [1741789597.645865680] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.600 for reason 'discarding message because the queue is full'
-1741789597.8071001 [rviz2-8] [INFO] [1741789597.806809486] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.700 for reason 'discarding message because the queue is full'
-1741789597.9988325 [rviz2-8] [INFO] [1741789597.998506852] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.800 for reason 'discarding message because the queue is full'
-1741789598.1902411 [rviz2-8] [INFO] [1741789598.190048054] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 37.900 for reason 'discarding message because the queue is full'
-1741789598.3501606 [rviz2-8] [INFO] [1741789598.349895385] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.000 for reason 'discarding message because the queue is full'
-1741789598.5427175 [rviz2-8] [INFO] [1741789598.542317003] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.100 for reason 'discarding message because the queue is full'
-1741789598.7661479 [rviz2-8] [INFO] [1741789598.765812625] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.200 for reason 'discarding message because the queue is full'
-1741789598.9901328 [rviz2-8] [INFO] [1741789598.989838219] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.300 for reason 'discarding message because the queue is full'
-1741789599.1821611 [rviz2-8] [INFO] [1741789599.181954951] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.400 for reason 'discarding message because the queue is full'
-1741789599.3744950 [rviz2-8] [INFO] [1741789599.374017542] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.500 for reason 'discarding message because the queue is full'
-1741789599.5979333 [rviz2-8] [INFO] [1741789599.597667432] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.600 for reason 'discarding message because the queue is full'
-1741789599.7579832 [rviz2-8] [INFO] [1741789599.757783562] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.700 for reason 'discarding message because the queue is full'
-1741789599.9184196 [rviz2-8] [INFO] [1741789599.918200341] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.800 for reason 'discarding message because the queue is full'
-1741789600.0783677 [rviz2-8] [INFO] [1741789600.078186583] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 38.900 for reason 'discarding message because the queue is full'
-1741789600.2383370 [rviz2-8] [INFO] [1741789600.238142702] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.000 for reason 'discarding message because the queue is full'
-1741789600.4300058 [rviz2-8] [INFO] [1741789600.429759776] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.100 for reason 'discarding message because the queue is full'
-1741789600.5902331 [rviz2-8] [INFO] [1741789600.589688917] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.200 for reason 'discarding message because the queue is full'
-1741789600.7501070 [rviz2-8] [INFO] [1741789600.749871743] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.300 for reason 'discarding message because the queue is full'
-1741789600.9432120 [rviz2-8] [INFO] [1741789600.942767531] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.400 for reason 'discarding message because the queue is full'
-1741789601.1344640 [rviz2-8] [INFO] [1741789601.134113437] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.500 for reason 'discarding message because the queue is full'
-1741789601.2944512 [rviz2-8] [INFO] [1741789601.294252019] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.600 for reason 'discarding message because the queue is full'
-1741789601.4861736 [rviz2-8] [INFO] [1741789601.485917132] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.700 for reason 'discarding message because the queue is full'
-1741789601.6782260 [rviz2-8] [INFO] [1741789601.678002134] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.800 for reason 'discarding message because the queue is full'
-1741789601.8388131 [rviz2-8] [INFO] [1741789601.838624793] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 39.900 for reason 'discarding message because the queue is full'
-1741789601.9981081 [rviz2-8] [INFO] [1741789601.997935963] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.000 for reason 'discarding message because the queue is full'
-1741789602.1583707 [rviz2-8] [INFO] [1741789602.158139904] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.100 for reason 'discarding message because the queue is full'
-1741789602.3500600 [rviz2-8] [INFO] [1741789602.349859646] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.200 for reason 'discarding message because the queue is full'
-1741789602.5101893 [rviz2-8] [INFO] [1741789602.509920662] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.300 for reason 'discarding message because the queue is full'
-1741789602.6699843 [rviz2-8] [INFO] [1741789602.669798396] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.400 for reason 'discarding message because the queue is full'
-1741789602.8624120 [rviz2-8] [INFO] [1741789602.862096920] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.500 for reason 'discarding message because the queue is full'
-1741789603.0545561 [rviz2-8] [INFO] [1741789603.054371460] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.600 for reason 'discarding message because the queue is full'
-1741789603.2141244 [rviz2-8] [INFO] [1741789603.213897366] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.700 for reason 'discarding message because the queue is full'
-1741789603.3742373 [rviz2-8] [INFO] [1741789603.373928678] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.800 for reason 'discarding message because the queue is full'
-1741789603.5343683 [rviz2-8] [INFO] [1741789603.533985639] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 40.900 for reason 'discarding message because the queue is full'
-1741789603.7584906 [rviz2-8] [INFO] [1741789603.758087622] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.000 for reason 'discarding message because the queue is full'
-1741789603.9185481 [rviz2-8] [INFO] [1741789603.918376297] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.100 for reason 'discarding message because the queue is full'
-1741789604.0785270 [rviz2-8] [INFO] [1741789604.078237483] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.200 for reason 'discarding message because the queue is full'
-1741789604.2387259 [rviz2-8] [INFO] [1741789604.238465041] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.300 for reason 'discarding message because the queue is full'
-1741789604.4305427 [rviz2-8] [INFO] [1741789604.430267305] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.400 for reason 'discarding message because the queue is full'
-1741789604.6225252 [rviz2-8] [INFO] [1741789604.622239322] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.500 for reason 'discarding message because the queue is full'
-1741789604.7825632 [rviz2-8] [INFO] [1741789604.782359371] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.600 for reason 'discarding message because the queue is full'
-1741789604.9421768 [rviz2-8] [INFO] [1741789604.941979070] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.700 for reason 'discarding message because the queue is full'
-1741789605.1665821 [rviz2-8] [INFO] [1741789605.166345146] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.800 for reason 'discarding message because the queue is full'
-1741789605.3264894 [rviz2-8] [INFO] [1741789605.326157211] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 41.900 for reason 'discarding message because the queue is full'
-1741789605.5182898 [rviz2-8] [INFO] [1741789605.518051021] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.000 for reason 'discarding message because the queue is full'
-1741789605.7106326 [rviz2-8] [INFO] [1741789605.710287604] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.100 for reason 'discarding message because the queue is full'
-1741789605.9345665 [rviz2-8] [INFO] [1741789605.934345831] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.200 for reason 'discarding message because the queue is full'
-1741789606.1270053 [rviz2-8] [INFO] [1741789606.126709569] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.300 for reason 'discarding message because the queue is full'
-1741789606.3184216 [rviz2-8] [INFO] [1741789606.318188906] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.400 for reason 'discarding message because the queue is full'
-1741789606.4786122 [rviz2-8] [INFO] [1741789606.478397086] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.500 for reason 'discarding message because the queue is full'
-1741789606.7020447 [rviz2-8] [INFO] [1741789606.701851681] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.600 for reason 'discarding message because the queue is full'
-1741789606.8629141 [rviz2-8] [INFO] [1741789606.862619948] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.700 for reason 'discarding message because the queue is full'
-1741789607.0540891 [rviz2-8] [INFO] [1741789607.053815658] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.800 for reason 'discarding message because the queue is full'
-1741789607.2142203 [rviz2-8] [INFO] [1741789607.214001869] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 42.900 for reason 'discarding message because the queue is full'
-1741789607.4068773 [rviz2-8] [INFO] [1741789607.406644589] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.000 for reason 'discarding message because the queue is full'
-1741789607.5986903 [rviz2-8] [INFO] [1741789607.598410944] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.100 for reason 'discarding message because the queue is full'
-1741789607.7908061 [rviz2-8] [INFO] [1741789607.790577553] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.200 for reason 'discarding message because the queue is full'
-1741789607.9502039 [rviz2-8] [INFO] [1741789607.949892313] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.300 for reason 'discarding message because the queue is full'
-1741789608.1426737 [rviz2-8] [INFO] [1741789608.142330842] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.400 for reason 'discarding message because the queue is full'
-1741789608.3345695 [rviz2-8] [INFO] [1741789608.334350055] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.500 for reason 'discarding message because the queue is full'
-1741789608.4943695 [rviz2-8] [INFO] [1741789608.494057134] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.600 for reason 'discarding message because the queue is full'
-1741789608.6866310 [rviz2-8] [INFO] [1741789608.686422039] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.700 for reason 'discarding message because the queue is full'
-1741789608.8788347 [rviz2-8] [INFO] [1741789608.878561865] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.800 for reason 'discarding message because the queue is full'
-1741789609.0700672 [rviz2-8] [INFO] [1741789609.069786287] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 43.900 for reason 'discarding message because the queue is full'
-1741789609.2306318 [rviz2-8] [INFO] [1741789609.230407558] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.000 for reason 'discarding message because the queue is full'
-1741789609.4220340 [rviz2-8] [INFO] [1741789609.421806564] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.100 for reason 'discarding message because the queue is full'
-1741789609.6147161 [rviz2-8] [INFO] [1741789609.614499619] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.200 for reason 'discarding message because the queue is full'
-1741789609.8063946 [rviz2-8] [INFO] [1741789609.805953097] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.300 for reason 'discarding message because the queue is full'
-1741789609.9983799 [rviz2-8] [INFO] [1741789609.998086783] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.400 for reason 'discarding message because the queue is full'
-1741789610.1911514 [rviz2-8] [INFO] [1741789610.190793689] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.500 for reason 'discarding message because the queue is full'
-1741789610.3826442 [rviz2-8] [INFO] [1741789610.382323546] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.600 for reason 'discarding message because the queue is full'
-1741789610.5743070 [rviz2-8] [INFO] [1741789610.574104931] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.700 for reason 'discarding message because the queue is full'
-1741789610.7346604 [rviz2-8] [INFO] [1741789610.734343467] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.800 for reason 'discarding message because the queue is full'
-1741789610.9263570 [rviz2-8] [INFO] [1741789610.926043536] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 44.900 for reason 'discarding message because the queue is full'
-1741789611.1507823 [rviz2-8] [INFO] [1741789611.150493713] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.000 for reason 'discarding message because the queue is full'
-1741789611.3110611 [rviz2-8] [INFO] [1741789611.310843092] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.100 for reason 'discarding message because the queue is full'
-1741789611.5027564 [rviz2-8] [INFO] [1741789611.502342625] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.200 for reason 'discarding message because the queue is full'
-1741789611.6940649 [rviz2-8] [INFO] [1741789611.693739313] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.300 for reason 'discarding message because the queue is full'
-1741789611.8867126 [rviz2-8] [INFO] [1741789611.886505187] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.400 for reason 'discarding message because the queue is full'
-1741789612.0459840 [rviz2-8] [INFO] [1741789612.045777983] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.500 for reason 'discarding message because the queue is full'
-1741789612.2382996 [rviz2-8] [INFO] [1741789612.238097388] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.600 for reason 'discarding message because the queue is full'
-1741789612.4304957 [rviz2-8] [INFO] [1741789612.430152545] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.700 for reason 'discarding message because the queue is full'
-1741789612.6225970 [rviz2-8] [INFO] [1741789612.622263912] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.800 for reason 'discarding message because the queue is full'
-1741789612.8145223 [rviz2-8] [INFO] [1741789612.814295881] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 45.900 for reason 'discarding message because the queue is full'
-1741789612.9741051 [rviz2-8] [INFO] [1741789612.973895382] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.000 for reason 'discarding message because the queue is full'
-1741789613.1674299 [rviz2-8] [INFO] [1741789613.166991030] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.100 for reason 'discarding message because the queue is full'
-1741789613.3588767 [rviz2-8] [INFO] [1741789613.358501575] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.200 for reason 'discarding message because the queue is full'
-1741789613.5505126 [rviz2-8] [INFO] [1741789613.550212110] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.300 for reason 'discarding message because the queue is full'
-1741789613.7428737 [rviz2-8] [INFO] [1741789613.742664088] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.400 for reason 'discarding message because the queue is full'
-1741789613.9021733 [rviz2-8] [INFO] [1741789613.901876975] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.500 for reason 'discarding message because the queue is full'
-1741789614.1264615 [rviz2-8] [INFO] [1741789614.126170748] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.600 for reason 'discarding message because the queue is full'
-1741789614.2862091 [rviz2-8] [INFO] [1741789614.285908291] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.700 for reason 'discarding message because the queue is full'
-1741789614.4782772 [rviz2-8] [INFO] [1741789614.478025530] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.800 for reason 'discarding message because the queue is full'
-1741789614.6711524 [rviz2-8] [INFO] [1741789614.670822524] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 46.900 for reason 'discarding message because the queue is full'
-1741789614.8951583 [rviz2-8] [INFO] [1741789614.894816555] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.000 for reason 'discarding message because the queue is full'
-1741789615.0546081 [rviz2-8] [INFO] [1741789615.054422465] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.100 for reason 'discarding message because the queue is full'
-1741789615.2462478 [rviz2-8] [INFO] [1741789615.246046996] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.200 for reason 'discarding message because the queue is full'
-1741789615.4382904 [rviz2-8] [INFO] [1741789615.438091471] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.300 for reason 'discarding message because the queue is full'
-1741789615.6309364 [rviz2-8] [INFO] [1741789615.630614899] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.400 for reason 'discarding message because the queue is full'
-1741789615.8225222 [rviz2-8] [INFO] [1741789615.822298006] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.500 for reason 'discarding message because the queue is full'
-1741789617.1130469 [rviz2-8] [INFO] [1741789617.112698701] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.600 for reason 'discarding message because the queue is full'
-1741789617.3040404 [rviz2-8] [INFO] [1741789617.303832440] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.700 for reason 'discarding message because the queue is full'
-1741789617.5285583 [rviz2-8] [INFO] [1741789617.528336169] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.800 for reason 'discarding message because the queue is full'
-1741789617.6888108 [rviz2-8] [INFO] [1741789617.688497857] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 47.900 for reason 'discarding message because the queue is full'
-1741789617.8805044 [rviz2-8] [INFO] [1741789617.880063901] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.000 for reason 'discarding message because the queue is full'
-1741789618.0723453 [rviz2-8] [INFO] [1741789618.072091077] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.100 for reason 'discarding message because the queue is full'
-1741789618.2648089 [rviz2-8] [INFO] [1741789618.264592946] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.200 for reason 'discarding message because the queue is full'
-1741789618.4563656 [rviz2-8] [INFO] [1741789618.456167335] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.300 for reason 'discarding message because the queue is full'
-1741789618.6164958 [rviz2-8] [INFO] [1741789618.616264780] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.400 for reason 'discarding message because the queue is full'
-1741789618.8082597 [rviz2-8] [INFO] [1741789618.808063637] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.500 for reason 'discarding message because the queue is full'
-1741789619.0331132 [rviz2-8] [INFO] [1741789619.032671143] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.600 for reason 'discarding message because the queue is full'
-1741789619.1920354 [rviz2-8] [INFO] [1741789619.191822949] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.700 for reason 'discarding message because the queue is full'
-1741789619.3850932 [rviz2-8] [INFO] [1741789619.384772850] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.800 for reason 'discarding message because the queue is full'
-1741789619.5765512 [rviz2-8] [INFO] [1741789619.576228402] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 48.900 for reason 'discarding message because the queue is full'
-1741789619.8002610 [rviz2-8] [INFO] [1741789619.799969190] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.000 for reason 'discarding message because the queue is full'
-1741789619.9602747 [rviz2-8] [INFO] [1741789619.959866384] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.100 for reason 'discarding message because the queue is full'
-1741789620.1522872 [rviz2-8] [INFO] [1741789620.152092108] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.200 for reason 'discarding message because the queue is full'
-1741789620.3120198 [rviz2-8] [INFO] [1741789620.311786463] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.300 for reason 'discarding message because the queue is full'
-1741789620.5360503 [rviz2-8] [INFO] [1741789620.535769651] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.400 for reason 'discarding message because the queue is full'
-1741789620.7288620 [rviz2-8] [INFO] [1741789620.728479421] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.500 for reason 'discarding message because the queue is full'
-1741789620.9202225 [rviz2-8] [INFO] [1741789620.919971666] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.600 for reason 'discarding message because the queue is full'
-1741789621.1127810 [rviz2-8] [INFO] [1741789621.112572639] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.700 for reason 'discarding message because the queue is full'
-1741789621.3359413 [rviz2-8] [INFO] [1741789621.335733390] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.800 for reason 'discarding message because the queue is full'
-1741789621.5284598 [rviz2-8] [INFO] [1741789621.528215953] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 49.900 for reason 'discarding message because the queue is full'
-1741789621.7204034 [rviz2-8] [INFO] [1741789621.720145132] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.000 for reason 'discarding message because the queue is full'
-1741789621.9762902 [rviz2-8] [INFO] [1741789621.975954299] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.100 for reason 'discarding message because the queue is full'
-1741789622.2319746 [rviz2-8] [INFO] [1741789622.231709049] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.200 for reason 'discarding message because the queue is full'
-1741789622.3929403 [rviz2-8] [INFO] [1741789622.392688747] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.300 for reason 'discarding message because the queue is full'
-1741789622.5849118 [rviz2-8] [INFO] [1741789622.584638619] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.400 for reason 'discarding message because the queue is full'
-1741789622.7763569 [rviz2-8] [INFO] [1741789622.776155468] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.500 for reason 'discarding message because the queue is full'
-1741789622.9681520 [rviz2-8] [INFO] [1741789622.967894623] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.600 for reason 'discarding message because the queue is full'
-1741789623.1281471 [rviz2-8] [INFO] [1741789623.127929642] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.700 for reason 'discarding message because the queue is full'
-1741789623.2886167 [rviz2-8] [INFO] [1741789623.288422910] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.800 for reason 'discarding message because the queue is full'
-1741789623.4486928 [rviz2-8] [INFO] [1741789623.448411050] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 50.900 for reason 'discarding message because the queue is full'
-1741789623.6403041 [rviz2-8] [INFO] [1741789623.640048391] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.000 for reason 'discarding message because the queue is full'
-1741789623.8006139 [rviz2-8] [INFO] [1741789623.800278684] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.100 for reason 'discarding message because the queue is full'
-1741789623.9928823 [rviz2-8] [INFO] [1741789623.992510875] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.200 for reason 'discarding message because the queue is full'
-1741789624.1840858 [rviz2-8] [INFO] [1741789624.183834980] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.300 for reason 'discarding message because the queue is full'
-1741789624.4088728 [rviz2-8] [INFO] [1741789624.408626715] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.400 for reason 'discarding message because the queue is full'
-1741789624.6001444 [rviz2-8] [INFO] [1741789624.599907861] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.500 for reason 'discarding message because the queue is full'
-1741789624.7922835 [rviz2-8] [INFO] [1741789624.792042303] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.600 for reason 'discarding message because the queue is full'
-1741789624.9843576 [rviz2-8] [INFO] [1741789624.984133808] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.700 for reason 'discarding message because the queue is full'
-1741789625.1763670 [rviz2-8] [INFO] [1741789625.176062462] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.800 for reason 'discarding message because the queue is full'
-1741789625.3686759 [rviz2-8] [INFO] [1741789625.368472447] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 51.900 for reason 'discarding message because the queue is full'
-1741789625.5602055 [rviz2-8] [INFO] [1741789625.559954007] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.000 for reason 'discarding message because the queue is full'
-1741789625.7526114 [rviz2-8] [INFO] [1741789625.752331440] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.100 for reason 'discarding message because the queue is full'
-1741789625.9444907 [rviz2-8] [INFO] [1741789625.944287690] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.200 for reason 'discarding message because the queue is full'
-1741789626.1680315 [rviz2-8] [INFO] [1741789626.167822362] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.300 for reason 'discarding message because the queue is full'
-1741789626.3609707 [rviz2-8] [INFO] [1741789626.360662022] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.400 for reason 'discarding message because the queue is full'
-1741789626.5204580 [rviz2-8] [INFO] [1741789626.520260638] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.500 for reason 'discarding message because the queue is full'
-1741789626.7443790 [rviz2-8] [INFO] [1741789626.744015896] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.600 for reason 'discarding message because the queue is full'
-1741789626.9358995 [rviz2-8] [INFO] [1741789626.935689340] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.700 for reason 'discarding message because the queue is full'
-1741789627.1281986 [rviz2-8] [INFO] [1741789627.128014662] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.800 for reason 'discarding message because the queue is full'
-1741789627.3200898 [rviz2-8] [INFO] [1741789627.319838729] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 52.900 for reason 'discarding message because the queue is full'
-1741789627.5125809 [rviz2-8] [INFO] [1741789627.512387485] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.000 for reason 'discarding message because the queue is full'
-1741789627.7041183 [rviz2-8] [INFO] [1741789627.703858848] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.100 for reason 'discarding message because the queue is full'
-1741789627.9284499 [rviz2-8] [INFO] [1741789627.928165398] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.200 for reason 'discarding message because the queue is full'
-1741789628.1212144 [rviz2-8] [INFO] [1741789628.120804158] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.300 for reason 'discarding message because the queue is full'
-1741789628.3764477 [rviz2-8] [INFO] [1741789628.376146818] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.400 for reason 'discarding message because the queue is full'
-1741789628.5683174 [rviz2-8] [INFO] [1741789628.567998389] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.500 for reason 'discarding message because the queue is full'
-1741789628.7607419 [rviz2-8] [INFO] [1741789628.760451741] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.600 for reason 'discarding message because the queue is full'
-1741789628.9526312 [rviz2-8] [INFO] [1741789628.952257347] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.700 for reason 'discarding message because the queue is full'
-1741789629.1764121 [rviz2-8] [INFO] [1741789629.176206210] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.800 for reason 'discarding message because the queue is full'
-1741789629.3687441 [rviz2-8] [INFO] [1741789629.368473550] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 53.900 for reason 'discarding message because the queue is full'
-1741789629.5605314 [rviz2-8] [INFO] [1741789629.560307242] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.000 for reason 'discarding message because the queue is full'
-1741789629.7527804 [rviz2-8] [INFO] [1741789629.752388451] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.100 for reason 'discarding message because the queue is full'
-1741789629.9765143 [rviz2-8] [INFO] [1741789629.976303192] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.200 for reason 'discarding message because the queue is full'
-1741789630.1683135 [rviz2-8] [INFO] [1741789630.168115560] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.300 for reason 'discarding message because the queue is full'
-1741789630.3604889 [rviz2-8] [INFO] [1741789630.360070954] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.400 for reason 'discarding message because the queue is full'
-1741789630.5849242 [rviz2-8] [INFO] [1741789630.584711696] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.500 for reason 'discarding message because the queue is full'
-1741789630.8084908 [rviz2-8] [INFO] [1741789630.808306959] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.600 for reason 'discarding message because the queue is full'
-1741789631.0003712 [rviz2-8] [INFO] [1741789631.000077047] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.700 for reason 'discarding message because the queue is full'
-1741789631.2243438 [rviz2-8] [INFO] [1741789631.224159534] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.800 for reason 'discarding message because the queue is full'
-1741789631.4162817 [rviz2-8] [INFO] [1741789631.416070737] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 54.900 for reason 'discarding message because the queue is full'
-1741789631.6406393 [rviz2-8] [INFO] [1741789631.640394429] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.000 for reason 'discarding message because the queue is full'
-1741789631.8322256 [rviz2-8] [INFO] [1741789631.831991119] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.100 for reason 'discarding message because the queue is full'
-1741789632.0251780 [rviz2-8] [INFO] [1741789632.024798324] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.200 for reason 'discarding message because the queue is full'
-1741789632.2485197 [rviz2-8] [INFO] [1741789632.248309969] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.300 for reason 'discarding message because the queue is full'
-1741789632.4725921 [rviz2-8] [INFO] [1741789632.472339585] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.400 for reason 'discarding message because the queue is full'
-1741789632.6967762 [rviz2-8] [INFO] [1741789632.696492930] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.500 for reason 'discarding message because the queue is full'
-1741789632.8889084 [rviz2-8] [INFO] [1741789632.888602972] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.600 for reason 'discarding message because the queue is full'
-1741789633.0807731 [rviz2-8] [INFO] [1741789633.080534241] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.700 for reason 'discarding message because the queue is full'
-1741789633.3042054 [rviz2-8] [INFO] [1741789633.303851049] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.800 for reason 'discarding message because the queue is full'
-1741789633.4968157 [rviz2-8] [INFO] [1741789633.496510603] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 55.900 for reason 'discarding message because the queue is full'
-1741789633.6887703 [rviz2-8] [INFO] [1741789633.688485651] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.000 for reason 'discarding message because the queue is full'
-1741789633.9131851 [rviz2-8] [INFO] [1741789633.912960117] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.100 for reason 'discarding message because the queue is full'
-1741789634.1359348 [rviz2-8] [INFO] [1741789634.135744631] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.200 for reason 'discarding message because the queue is full'
-1741789634.3282802 [rviz2-8] [INFO] [1741789634.327985507] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.300 for reason 'discarding message because the queue is full'
-1741789634.5202453 [rviz2-8] [INFO] [1741789634.519923673] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.400 for reason 'discarding message because the queue is full'
-1741789634.7448664 [rviz2-8] [INFO] [1741789634.744490697] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.500 for reason 'discarding message because the queue is full'
-1741789634.9686596 [rviz2-8] [INFO] [1741789634.968368211] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.600 for reason 'discarding message because the queue is full'
-1741789635.1599472 [rviz2-8] [INFO] [1741789635.159704377] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.700 for reason 'discarding message because the queue is full'
-1741789635.3530025 [rviz2-8] [INFO] [1741789635.352783370] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.800 for reason 'discarding message because the queue is full'
-1741789635.5761459 [rviz2-8] [INFO] [1741789635.575936139] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 56.900 for reason 'discarding message because the queue is full'
-1741789635.8005550 [rviz2-8] [INFO] [1741789635.800210373] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.000 for reason 'discarding message because the queue is full'
-1741789635.9925947 [rviz2-8] [INFO] [1741789635.992307236] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.100 for reason 'discarding message because the queue is full'
-1741789636.1844792 [rviz2-8] [INFO] [1741789636.184244004] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.200 for reason 'discarding message because the queue is full'
-1741789636.4085443 [rviz2-8] [INFO] [1741789636.408324187] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.300 for reason 'discarding message because the queue is full'
-1741789636.6328800 [rviz2-8] [INFO] [1741789636.632518575] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.400 for reason 'discarding message because the queue is full'
-1741789636.8569615 [rviz2-8] [INFO] [1741789636.856715440] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.500 for reason 'discarding message because the queue is full'
-1741789637.0481720 [rviz2-8] [INFO] [1741789637.047961651] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.600 for reason 'discarding message because the queue is full'
-1741789637.2407441 [rviz2-8] [INFO] [1741789637.240454140] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.700 for reason 'discarding message because the queue is full'
-1741789637.5279481 [rviz2-8] [INFO] [1741789637.527735550] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.800 for reason 'discarding message because the queue is full'
-1741789637.7535448 [rviz2-8] [INFO] [1741789637.753026473] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 57.900 for reason 'discarding message because the queue is full'
-1741789637.9765308 [rviz2-8] [INFO] [1741789637.976185966] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.000 for reason 'discarding message because the queue is full'
-1741789638.1688213 [rviz2-8] [INFO] [1741789638.168537658] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.100 for reason 'discarding message because the queue is full'
-1741789638.4242918 [rviz2-8] [INFO] [1741789638.424042960] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.200 for reason 'discarding message because the queue is full'
-1741789638.6483545 [rviz2-8] [INFO] [1741789638.648003782] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.300 for reason 'discarding message because the queue is full'
-1741789638.9042952 [rviz2-8] [INFO] [1741789638.903927208] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.400 for reason 'discarding message because the queue is full'
-1741789639.1285317 [rviz2-8] [INFO] [1741789639.128332652] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.500 for reason 'discarding message because the queue is full'
-1741789639.3525801 [rviz2-8] [INFO] [1741789639.352287748] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.600 for reason 'discarding message because the queue is full'
-1741789639.5443306 [rviz2-8] [INFO] [1741789639.544130549] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.700 for reason 'discarding message because the queue is full'
-1741789639.7362058 [rviz2-8] [INFO] [1741789639.735993544] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.800 for reason 'discarding message because the queue is full'
-1741789639.9608507 [rviz2-8] [INFO] [1741789639.960628589] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 58.900 for reason 'discarding message because the queue is full'
-1741789640.1849582 [rviz2-8] [INFO] [1741789640.184731424] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.000 for reason 'discarding message because the queue is full'
-1741789640.3767080 [rviz2-8] [INFO] [1741789640.376485050] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.100 for reason 'discarding message because the queue is full'
-1741789640.5684414 [rviz2-8] [INFO] [1741789640.568079792] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.200 for reason 'discarding message because the queue is full'
-1741789640.7921093 [rviz2-8] [INFO] [1741789640.791831651] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.300 for reason 'discarding message because the queue is full'
-1741789641.0168848 [rviz2-8] [INFO] [1741789641.016655677] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.400 for reason 'discarding message because the queue is full'
-1741789641.2403123 [rviz2-8] [INFO] [1741789641.240086058] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.500 for reason 'discarding message because the queue is full'
-1741789641.4320278 [rviz2-8] [INFO] [1741789641.431825883] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.600 for reason 'discarding message because the queue is full'
-1741789641.6561341 [rviz2-8] [INFO] [1741789641.655912571] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.700 for reason 'discarding message because the queue is full'
-1741789641.8807340 [rviz2-8] [INFO] [1741789641.880535050] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.800 for reason 'discarding message because the queue is full'
-1741789642.0733380 [rviz2-8] [INFO] [1741789642.072952933] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 59.900 for reason 'discarding message because the queue is full'
-1741789642.2642674 [rviz2-8] [INFO] [1741789642.264076094] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.000 for reason 'discarding message because the queue is full'
-1741789642.4885504 [rviz2-8] [INFO] [1741789642.488122896] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.100 for reason 'discarding message because the queue is full'
-1741789642.7124777 [rviz2-8] [INFO] [1741789642.712256051] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.200 for reason 'discarding message because the queue is full'
-1741789642.9042881 [rviz2-8] [INFO] [1741789642.903978273] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.300 for reason 'discarding message because the queue is full'
-1741789643.1289213 [rviz2-8] [INFO] [1741789643.128608218] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.400 for reason 'discarding message because the queue is full'
-1741789643.3205888 [rviz2-8] [INFO] [1741789643.320393150] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.500 for reason 'discarding message because the queue is full'
-1741789643.5763116 [rviz2-8] [INFO] [1741789643.576063330] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.600 for reason 'discarding message because the queue is full'
-1741789643.8010218 [rviz2-8] [INFO] [1741789643.800748878] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.700 for reason 'discarding message because the queue is full'
-1741789643.9928732 [rviz2-8] [INFO] [1741789643.992610172] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.800 for reason 'discarding message because the queue is full'
-1741789644.1840651 [rviz2-8] [INFO] [1741789644.183780279] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 60.900 for reason 'discarding message because the queue is full'
-1741789644.4085433 [rviz2-8] [INFO] [1741789644.408344552] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.000 for reason 'discarding message because the queue is full'
-1741789644.6008582 [rviz2-8] [INFO] [1741789644.600575066] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.100 for reason 'discarding message because the queue is full'
-1741789644.8245158 [rviz2-8] [INFO] [1741789644.824253899] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.200 for reason 'discarding message because the queue is full'
-1741789645.0167458 [rviz2-8] [INFO] [1741789645.016540407] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.300 for reason 'discarding message because the queue is full'
-1741789645.2411921 [rviz2-8] [INFO] [1741789645.240799596] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.400 for reason 'discarding message because the queue is full'
-1741789645.4646087 [rviz2-8] [INFO] [1741789645.464340625] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.500 for reason 'discarding message because the queue is full'
-1741789645.6568675 [rviz2-8] [INFO] [1741789645.656623915] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.600 for reason 'discarding message because the queue is full'
-1741789645.8804412 [rviz2-8] [INFO] [1741789645.880146058] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.700 for reason 'discarding message because the queue is full'
-1741789646.1046429 [rviz2-8] [INFO] [1741789646.104448586] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.800 for reason 'discarding message because the queue is full'
-1741789646.2972353 [rviz2-8] [INFO] [1741789646.296885199] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 61.900 for reason 'discarding message because the queue is full'
-1741789646.4888330 [rviz2-8] [INFO] [1741789646.488625692] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.000 for reason 'discarding message because the queue is full'
-1741789646.6802607 [rviz2-8] [INFO] [1741789646.680057519] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.100 for reason 'discarding message because the queue is full'
-1741789646.9045813 [rviz2-8] [INFO] [1741789646.904318604] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.200 for reason 'discarding message because the queue is full'
-1741789647.0968821 [rviz2-8] [INFO] [1741789647.096568839] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.300 for reason 'discarding message because the queue is full'
-1741789647.3202417 [rviz2-8] [INFO] [1741789647.320003727] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.400 for reason 'discarding message because the queue is full'
-1741789647.5130694 [rviz2-8] [INFO] [1741789647.512752927] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.500 for reason 'discarding message because the queue is full'
-1741789647.7364733 [rviz2-8] [INFO] [1741789647.736145926] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.600 for reason 'discarding message because the queue is full'
-1741789647.9286811 [rviz2-8] [INFO] [1741789647.928441574] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.700 for reason 'discarding message because the queue is full'
-1741789648.1526060 [rviz2-8] [INFO] [1741789648.152273096] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.800 for reason 'discarding message because the queue is full'
-1741789648.3451273 [rviz2-8] [INFO] [1741789648.344799717] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 62.900 for reason 'discarding message because the queue is full'
-1741789648.5685389 [rviz2-8] [INFO] [1741789648.568319732] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.000 for reason 'discarding message because the queue is full'
-1741789648.7929807 [rviz2-8] [INFO] [1741789648.792710086] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.100 for reason 'discarding message because the queue is full'
-1741789648.9846447 [rviz2-8] [INFO] [1741789648.984452295] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.200 for reason 'discarding message because the queue is full'
-1741789649.1768034 [rviz2-8] [INFO] [1741789649.176540450] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.300 for reason 'discarding message because the queue is full'
-1741789650.4610322 [rviz2-8] [INFO] [1741789650.460560780] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.400 for reason 'discarding message because the queue is full'
-1741789650.6526420 [rviz2-8] [INFO] [1741789650.652420708] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.500 for reason 'discarding message because the queue is full'
-1741789650.8776748 [rviz2-8] [INFO] [1741789650.877228702] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.600 for reason 'discarding message because the queue is full'
-1741789651.0682466 [rviz2-8] [INFO] [1741789651.068036442] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.700 for reason 'discarding message because the queue is full'
-1741789651.2932043 [rviz2-8] [INFO] [1741789651.292930999] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.800 for reason 'discarding message because the queue is full'
-1741789651.5170004 [rviz2-8] [INFO] [1741789651.516777615] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 63.900 for reason 'discarding message because the queue is full'
-1741789651.7088947 [rviz2-8] [INFO] [1741789651.708688327] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.000 for reason 'discarding message because the queue is full'
-1741789651.9329555 [rviz2-8] [INFO] [1741789651.932755067] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.100 for reason 'discarding message because the queue is full'
-1741789652.1563570 [rviz2-8] [INFO] [1741789652.156076406] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.200 for reason 'discarding message because the queue is full'
-1741789652.3484616 [rviz2-8] [INFO] [1741789652.348270081] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.300 for reason 'discarding message because the queue is full'
-1741789652.5411632 [rviz2-8] [INFO] [1741789652.540851648] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.400 for reason 'discarding message because the queue is full'
-1741789652.7643192 [rviz2-8] [INFO] [1741789652.764034223] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.500 for reason 'discarding message because the queue is full'
-1741789652.9889290 [rviz2-8] [INFO] [1741789652.988588901] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.600 for reason 'discarding message because the queue is full'
-1741789653.1812563 [rviz2-8] [INFO] [1741789653.180972943] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.700 for reason 'discarding message because the queue is full'
-1741789653.3725183 [rviz2-8] [INFO] [1741789653.372330302] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.800 for reason 'discarding message because the queue is full'
-1741789653.5964911 [rviz2-8] [INFO] [1741789653.596038769] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 64.900 for reason 'discarding message because the queue is full'
-1741789653.7886846 [rviz2-8] [INFO] [1741789653.788325415] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.000 for reason 'discarding message because the queue is full'
-1741789654.0124583 [rviz2-8] [INFO] [1741789654.012194932] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.100 for reason 'discarding message because the queue is full'
-1741789654.2044015 [rviz2-8] [INFO] [1741789654.204159236] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.200 for reason 'discarding message because the queue is full'
-1741789654.3963354 [rviz2-8] [INFO] [1741789654.396050983] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.300 for reason 'discarding message because the queue is full'
-1741789654.6204834 [rviz2-8] [INFO] [1741789654.620238955] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.400 for reason 'discarding message because the queue is full'
-1741789654.8448868 [rviz2-8] [INFO] [1741789654.844677914] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.500 for reason 'discarding message because the queue is full'
-1741789655.0370636 [rviz2-8] [INFO] [1741789655.036813628] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.600 for reason 'discarding message because the queue is full'
-1741789655.2282207 [rviz2-8] [INFO] [1741789655.228018400] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.700 for reason 'discarding message because the queue is full'
-1741789655.4840925 [rviz2-8] [INFO] [1741789655.483888153] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.800 for reason 'discarding message because the queue is full'
-1741789655.7082090 [rviz2-8] [INFO] [1741789655.707952365] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 65.900 for reason 'discarding message because the queue is full'
-1741789655.9326341 [rviz2-8] [INFO] [1741789655.932374252] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.000 for reason 'discarding message because the queue is full'
-1741789656.1250324 [rviz2-8] [INFO] [1741789656.124776487] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.100 for reason 'discarding message because the queue is full'
-1741789656.3801994 [rviz2-8] [INFO] [1741789656.379897131] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.200 for reason 'discarding message because the queue is full'
-1741789656.5726492 [rviz2-8] [INFO] [1741789656.572352541] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.300 for reason 'discarding message because the queue is full'
-1741789656.7642949 [rviz2-8] [INFO] [1741789656.764069116] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.400 for reason 'discarding message because the queue is full'
-1741789656.9886851 [rviz2-8] [INFO] [1741789656.988301191] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.500 for reason 'discarding message because the queue is full'
-1741789657.2129507 [rviz2-8] [INFO] [1741789657.212728382] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.600 for reason 'discarding message because the queue is full'
-1741789657.4050384 [rviz2-8] [INFO] [1741789657.404813034] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.700 for reason 'discarding message because the queue is full'
-1741789657.5967925 [rviz2-8] [INFO] [1741789657.596587177] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.800 for reason 'discarding message because the queue is full'
-1741789657.7882733 [rviz2-8] [INFO] [1741789657.788087744] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 66.900 for reason 'discarding message because the queue is full'
-1741789658.0132234 [rviz2-8] [INFO] [1741789658.012918822] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.000 for reason 'discarding message because the queue is full'
-1741789658.2046363 [rviz2-8] [INFO] [1741789658.204432195] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.100 for reason 'discarding message because the queue is full'
-1741789658.3971465 [rviz2-8] [INFO] [1741789658.396930301] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.200 for reason 'discarding message because the queue is full'
-1741789658.5892475 [rviz2-8] [INFO] [1741789658.589001843] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.300 for reason 'discarding message because the queue is full'
-1741789658.7801802 [rviz2-8] [INFO] [1741789658.779962089] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.400 for reason 'discarding message because the queue is full'
-1741789659.0366135 [rviz2-8] [INFO] [1741789659.036183203] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.500 for reason 'discarding message because the queue is full'
-1741789659.2284315 [rviz2-8] [INFO] [1741789659.228226779] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.600 for reason 'discarding message because the queue is full'
-1741789659.4210901 [rviz2-8] [INFO] [1741789659.420875055] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.700 for reason 'discarding message because the queue is full'
-1741789659.6449244 [rviz2-8] [INFO] [1741789659.644592879] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.800 for reason 'discarding message because the queue is full'
-1741789659.8690522 [rviz2-8] [INFO] [1741789659.868762344] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 67.900 for reason 'discarding message because the queue is full'
-1741789660.0610197 [rviz2-8] [INFO] [1741789660.060801689] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.000 for reason 'discarding message because the queue is full'
-1741789660.3169451 [rviz2-8] [INFO] [1741789660.316706580] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.100 for reason 'discarding message because the queue is full'
-1741789660.5404079 [rviz2-8] [INFO] [1741789660.540069299] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.200 for reason 'discarding message because the queue is full'
-1741789660.7652569 [rviz2-8] [INFO] [1741789660.765030668] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.300 for reason 'discarding message because the queue is full'
-1741789660.9885631 [rviz2-8] [INFO] [1741789660.988264406] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.400 for reason 'discarding message because the queue is full'
-1741789661.2451768 [rviz2-8] [INFO] [1741789661.244819103] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.500 for reason 'discarding message because the queue is full'
-1741789661.5329821 [rviz2-8] [INFO] [1741789661.532662291] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.600 for reason 'discarding message because the queue is full'
-1741789661.7573385 [rviz2-8] [INFO] [1741789661.757039688] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.700 for reason 'discarding message because the queue is full'
-1741789661.9813578 [rviz2-8] [INFO] [1741789661.980497032] [rviz]: Message Filter dropping message: frame 'ackermann_model/lidar/lidar' at time 68.800 for reason 'discarding message because the queue is full'
-1741789662.0807486 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-1741789662.0923014 [rviz2-8] [INFO] [1741789662.079796872] [rclcpp]: signal_handler(signum=2)
-1741789662.0947249 [ERROR] [micro_ros_agent-3]: process has died [pid 20153, exit code -2, cmd '/mnt/h/plattform/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent udp4 --middleware dds --verbose 4 --port 2019 --ros-args -r __node:=micro_ros_agent -r __ns:=/'].
-1741789662.0956273 [ERROR] [relay-9]: process has died [pid 20165, exit code -6, cmd '/opt/ros/humble/lib/topic_tools/relay /gz/tf /tf --ros-args'].
-1741789662.0969062 [robot_state_publisher-6] [INFO] [1741789662.079975203] [rclcpp]: signal_handler(signum=2)
-1741789662.1129189 [mavproxy.py -5] Connection reset or closed by peer on TCP socket
-1741789662.1132917 [mavproxy.py -5] Attempting reconnect
-1741789662.1134119 [mavproxy.py -5] [Errno 111] Connection refused sleeping
-1741789662.1134946 [mavproxy.py -5] [Errno 111] Connection refused sleeping
-1741789662.1141577 [mavproxy.py -5] Attempting reconnect
-1741789662.1143949 [mavproxy.py -5] [Errno 111] Connection refused sleeping
-1741789662.1144621 [mavproxy.py -5] Unloading module link
-1741789662.1146038 [mavproxy.py -5] Unloading module log
-1741789662.1146924 [mavproxy.py -5] Unloading module signing
-1741789662.1147704 [mavproxy.py -5] Unloading module wp
-1741789662.1148548 [mavproxy.py -5] Unloading module rally
-1741789662.1149030 [mavproxy.py -5] Unloading module fence
-1741789662.1149387 [mavproxy.py -5] Unloading module ftp
-1741789662.1149688 [mavproxy.py -5] Unloading module param
-1741789662.1149943 [mavproxy.py -5] Unloading module relay
-1741789662.1150188 [mavproxy.py -5] Unloading module tuneopt
-1741789662.1150644 [mavproxy.py -5] Unloading module arm
-1741789662.1151159 [mavproxy.py -5] Unloading module mode
-1741789662.1151805 [mavproxy.py -5] Unloading module calibration
-1741789662.1152246 [mavproxy.py -5] Unloading module rc
-1741789662.1152778 [mavproxy.py -5] Unloading module auxopt
-1741789662.1154218 [mavproxy.py -5] Unloading module misc
-1741789662.1155367 [mavproxy.py -5] Unloading module cmdlong
-1741789662.1158006 [mavproxy.py -5] Unloading module battery
-1741789662.1158609 [mavproxy.py -5] Unloading module terrain
-1741789662.1159346 [mavproxy.py -5] Unloading module output
-1741789662.1160004 [mavproxy.py -5] Unloading module adsb
-1741789662.1160543 [mavproxy.py -5] Unloading module layout
-1741789662.1948133 [ERROR] [mavproxy.py -5]: process has died [pid 20157, exit code -2, cmd 'mavproxy.py  --out 127.0.0.1:14550  --out  127.0.0.1:14551  --master tcp:127.0.0.1:5760  --sitl 127.0.0.1:5501  --non-interactive '].
-1741789662.2191486 [INFO] [robot_state_publisher-6]: process has finished cleanly [pid 20159]
-1741789662.2210259 [INFO] [parameter_bridge-7]: process has finished cleanly [pid 20161]
-1741789662.2292197 [ERROR] [ruby $(which gz) sim-1]: process has died [pid 20149, exit code -2, cmd 'ruby $(which gz) sim -v4 -s -r /mnt/h/plattform/install/ardupilot_gz_gazebo/share/ardupilot_gz_gazebo/worlds/ackermann_runway.sdf --force-version 8'].
-1741789662.2298164 [INFO] [launch]: process[ruby $(which gz) sim-1] was required: shutting down launched system
-1741789662.4162097 [ERROR] [rviz2-8]: process has died [pid 20163, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /mnt/h/plattform/install/ardupilot_gz_bringup/share/ardupilot_gz_bringup/rviz/ackermann.rviz --ros-args'].
-1741789662.4780481 [ERROR] [ruby $(which gz) sim-2]: process has died [pid 20151, exit code -2, cmd 'ruby $(which gz) sim -v4 -g --force-version 8'].
-1741789662.4782965 [INFO] [launch]: process[ruby $(which gz) sim-2] was required: shutting down launched system
+1741790810.6584682 [INFO] [launch]: All log files can be found below /home/pascal/.ros/log/2025-03-12-15-46-50-657322-DESKTOP-I5L32EL-22829
+1741790810.6586127 [INFO] [launch]: Default logging verbosity is set to INFO
+1741790844.1882741 [INFO] [ruby $(which gz) sim-1]: process started with pid [22966]
+1741790844.1885087 [INFO] [ruby $(which gz) sim-2]: process started with pid [22968]
+1741790844.1886075 [INFO] [micro_ros_agent-3]: process started with pid [22970]
+1741790844.1886871 [INFO] [dds_udp.parm --synthetic-clock -4]: process started with pid [22972]
+1741790844.1887324 [INFO] [mavproxy.py -5]: process started with pid [22974]
+1741790844.1887853 [INFO] [robot_state_publisher-6]: process started with pid [22976]
+1741790844.1888642 [INFO] [parameter_bridge-7]: process started with pid [22978]
+1741790844.1889424 [INFO] [rviz2-8]: process started with pid [22980]
+1741790844.3102367 [INFO] [relay-9]: process started with pid [22982]
+1741790845.0638831 [micro_ros_agent-3] [35m[1741790845.063478][m info     | [34mUDPv4AgentLinux.cpp[m | [37minit                    [m | [32mrunning...[m             | port: 2019
+1741790845.0642688 [micro_ros_agent-3] [35m[1741790845.063775][m info     | [34mRoot.cpp          [m | [37mset_verbose_level       [m | [32mlogger setup[m           | verbose_level: 4
+1741790845.0872834 [dds_udp.parm --synthetic-clock -4] Setting SIM_SPEEDUP=1.000000
+1741790845.0874410 [dds_udp.parm --synthetic-clock -4] Ignoring stale command-line parameter '-S'Starting SITL: JSON
+1741790845.0886178 [dds_udp.parm --synthetic-clock -4] JSON control interface set to 127.0.0.1:9002
+1741790845.0887530 [dds_udp.parm --synthetic-clock -4] Starting sketch 'Rover'
+1741790845.0888233 [dds_udp.parm --synthetic-clock -4] Starting SITL input
+1741790845.0888765 [dds_udp.parm --synthetic-clock -4] Using Irlock at port : 9005
+1741790845.0889621 [dds_udp.parm --synthetic-clock -4] Waiting for connection ....
+1741790845.0892527 [dds_udp.parm --synthetic-clock -4] bind port 5760 for SERIAL0
+1741790845.0893366 [dds_udp.parm --synthetic-clock -4] SERIAL0 on TCP port 5760
+1741790845.8363323 [rviz2-8] QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700
+1741790845.9862275 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_mid_b"]/sensor[@name="sonar_mid_b_sensor"]/gz_frame_id:<data-string>:L264]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790845.9877498 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_l"]/sensor[@name="sonar_l_sensor"]/gz_frame_id:<data-string>:L335]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790845.9897904 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_rb"]/sensor[@name="sonar_rb_sensor"]/gz_frame_id:<data-string>:L402]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790845.9917598 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_r"]/sensor[@name="sonar_r_sensor"]/gz_frame_id:<data-string>:L468]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790845.9935787 [robot_state_publisher-6] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_lb"]/sensor[@name="sonar_lb_sensor"]/gz_frame_id:<data-string>:L535]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790846.0072031 [robot_state_publisher-6] [WARN] [1741790846.006973967] [sdformat_urdf]: SDFormat link [base_link] has a <sensor>, but URDF does not support this
+1741790846.0076046 [robot_state_publisher-6] [WARN] [1741790846.007124457] [sdformat_urdf]: SDFormat link [sonar_mid_b] has a <sensor>, but URDF does not support this
+1741790846.0079105 [robot_state_publisher-6] [WARN] [1741790846.007134500] [sdformat_urdf]: SDFormat link [sonar_l] has a <sensor>, but URDF does not support this
+1741790846.0082152 [robot_state_publisher-6] [WARN] [1741790846.007142401] [sdformat_urdf]: SDFormat link [sonar_rb] has a <sensor>, but URDF does not support this
+1741790846.0082607 [robot_state_publisher-6] [WARN] [1741790846.007149767] [sdformat_urdf]: SDFormat link [sonar_r] has a <sensor>, but URDF does not support this
+1741790846.0083086 [robot_state_publisher-6] [WARN] [1741790846.007157852] [sdformat_urdf]: SDFormat link [sonar_lb] has a <sensor>, but URDF does not support this
+1741790846.0083513 [robot_state_publisher-6] [WARN] [1741790846.007164870] [sdformat_urdf]: SDFormat link [lidar] has a <sensor>, but URDF does not support this
+1741790846.0083997 [robot_state_publisher-6] [WARN] [1741790846.007172076] [sdformat_urdf]: SDFormat link [camera] has a <sensor>, but URDF does not support this
+1741790846.0193582 [robot_state_publisher-6] [WARN] [1741790846.019114982] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+1741790846.0197482 [robot_state_publisher-6] [INFO] [1741790846.019282409] [robot_state_publisher]: got segment base_link
+1741790846.0198600 [robot_state_publisher-6] [INFO] [1741790846.019360467] [robot_state_publisher]: got segment camera
+1741790846.0199172 [robot_state_publisher-6] [INFO] [1741790846.019366549] [robot_state_publisher]: got segment lidar
+1741790846.0199866 [robot_state_publisher-6] [INFO] [1741790846.019369061] [robot_state_publisher]: got segment sonar_l
+1741790846.0200655 [robot_state_publisher-6] [INFO] [1741790846.019371476] [robot_state_publisher]: got segment sonar_lb
+1741790846.0201416 [robot_state_publisher-6] [INFO] [1741790846.019373478] [robot_state_publisher]: got segment sonar_mid_b
+1741790846.0201957 [robot_state_publisher-6] [INFO] [1741790846.019375641] [robot_state_publisher]: got segment sonar_r
+1741790846.0202589 [robot_state_publisher-6] [INFO] [1741790846.019377612] [robot_state_publisher]: got segment sonar_rb
+1741790846.0203166 [robot_state_publisher-6] [INFO] [1741790846.019379612] [robot_state_publisher]: got segment steering_left
+1741790846.0203443 [robot_state_publisher-6] [INFO] [1741790846.019381851] [robot_state_publisher]: got segment steering_right
+1741790846.0203705 [robot_state_publisher-6] [INFO] [1741790846.019384044] [robot_state_publisher]: got segment wheel_lb
+1741790846.0203950 [robot_state_publisher-6] [INFO] [1741790846.019386022] [robot_state_publisher]: got segment wheel_lf
+1741790846.0204139 [robot_state_publisher-6] [INFO] [1741790846.019388099] [robot_state_publisher]: got segment wheel_rb
+1741790846.0204308 [robot_state_publisher-6] [INFO] [1741790846.019390412] [robot_state_publisher]: got segment wheel_rf
+1741790847.8517377 [rviz2-8] [INFO] [1741790847.851461314] [rviz2]: Stereo is NOT SUPPORTED
+1741790847.8519189 [rviz2-8] [INFO] [1741790847.851568283] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
+1741790848.1383915 [rviz2-8] [INFO] [1741790848.138185566] [rviz2]: Stereo is NOT SUPPORTED
+1741790851.9936914 [dds_udp.parm --synthetic-clock -4] Connection on serial port 5760
+1741790852.0259507 [dds_udp.parm --synthetic-clock -4] Loaded defaults from /mnt/h/01_Unistuff/00_Stuff/02_Master/Thesis/sam-plattform-entwicklung/plattform/install/ardupilot_sitl/share/ardupilot_sitl/config/default_params/rover.parm,/mnt/h/01_Unistuff/00_Stuff/02_Master/Thesis/sam-plattform-entwicklung/plattform/install/ardupilot_sitl/share/ardupilot_sitl/config/default_params/dds_udp.parm
+1741790852.0263698 [dds_udp.parm --synthetic-clock -4] bind port 5762 for SERIAL1
+1741790852.0264862 [dds_udp.parm --synthetic-clock -4] SERIAL1 on TCP port 5762
+1741790852.0265803 [dds_udp.parm --synthetic-clock -4] bind port 5763 for SERIAL2
+1741790852.0266552 [dds_udp.parm --synthetic-clock -4] SERIAL2 on TCP port 5763
+1741790852.0268912 [dds_udp.parm --synthetic-clock -4] Home: -35.363262 149.165237 alt=584.000000m hdg=353.000000
+1741790853.1279850 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790854.2293296 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790855.0293465 [mavproxy.py -5] Connect tcp:127.0.0.1:5760 source_system=255
+1741790855.0296164 [mavproxy.py -5] Log Directory: 
+1741790855.0297339 [mavproxy.py -5] Telemetry log: mav.tlog
+1741790855.0298133 [mavproxy.py -5] Waiting for heartbeat from tcp:127.0.0.1:5760
+1741790855.0298908 [mavproxy.py -5] link 1 down
+1741790855.3303900 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790856.4309356 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790857.1593544 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_mid_b"]/sensor[@name="sonar_mid_b_sensor"]/gz_frame_id:<data-string>:L264]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790857.1618907 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_l"]/sensor[@name="sonar_l_sensor"]/gz_frame_id:<data-string>:L335]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790857.1638288 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_rb"]/sensor[@name="sonar_rb_sensor"]/gz_frame_id:<data-string>:L402]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790857.1659188 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_r"]/sensor[@name="sonar_r_sensor"]/gz_frame_id:<data-string>:L468]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790857.1677296 [rviz2-8] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="sam_model"]/link[@name="sonar_lb"]/sensor[@name="sonar_lb_sensor"]/gz_frame_id:<data-string>:L535]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+1741790857.1855869 [rviz2-8] [WARN] [1741790857.185375934] [sdformat_urdf]: SDFormat link [base_link] has a <sensor>, but URDF does not support this
+1741790857.1859288 [rviz2-8] [WARN] [1741790857.185538314] [sdformat_urdf]: SDFormat link [sonar_mid_b] has a <sensor>, but URDF does not support this
+1741790857.1860104 [rviz2-8] [WARN] [1741790857.185549408] [sdformat_urdf]: SDFormat link [sonar_l] has a <sensor>, but URDF does not support this
+1741790857.1860518 [rviz2-8] [WARN] [1741790857.185557314] [sdformat_urdf]: SDFormat link [sonar_rb] has a <sensor>, but URDF does not support this
+1741790857.1861014 [rviz2-8] [WARN] [1741790857.185564555] [sdformat_urdf]: SDFormat link [sonar_r] has a <sensor>, but URDF does not support this
+1741790857.1861441 [rviz2-8] [WARN] [1741790857.185573181] [sdformat_urdf]: SDFormat link [sonar_lb] has a <sensor>, but URDF does not support this
+1741790857.1861818 [rviz2-8] [WARN] [1741790857.185580334] [sdformat_urdf]: SDFormat link [lidar] has a <sensor>, but URDF does not support this
+1741790857.1862369 [rviz2-8] [WARN] [1741790857.185587542] [sdformat_urdf]: SDFormat link [camera] has a <sensor>, but URDF does not support this
+1741790857.5317369 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790858.6325853 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790859.7336178 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790860.8347340 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790861.9363785 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790863.0372033 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790864.1383607 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790866.6212592 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790867.7228103 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790868.8240919 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790869.9253726 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790871.0266628 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790872.1279571 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790873.2287900 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790874.3298049 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790875.4306860 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790876.5315003 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790877.6323156 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790878.7337165 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790879.8348770 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790880.9358702 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790882.0371726 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790883.1384611 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790884.2400031 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790885.3412123 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790886.4426095 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790887.5434806 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790888.6440215 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790889.7449090 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790890.8464873 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790891.9477825 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790893.0491064 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790894.1505167 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790895.2519403 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790896.3529909 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790897.4539404 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790899.8764038 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790900.9772289 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790902.0782535 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790903.1793878 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790904.2804513 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790905.3818715 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790906.4826572 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790907.5841534 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790908.6853325 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790909.7865682 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790910.8877861 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790911.9888144 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790913.0897660 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790914.1912911 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790915.2924831 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790916.3937883 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790917.4949651 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790918.5954726 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790919.6961482 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790920.7974517 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790921.8988729 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790923.0002661 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790924.1015530 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790925.2029142 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790926.3042836 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790927.4053962 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790928.5058451 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790929.6063728 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790930.7077091 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790933.1624835 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790934.2636068 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790935.3646290 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790936.4661856 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790937.5674536 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790938.6686807 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790939.7696996 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790940.8706324 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790941.9716551 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790943.0726495 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790944.1736443 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790945.2741313 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790946.3753588 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790947.4767323 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790948.5781796 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790949.6789253 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790950.7796879 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790951.8810244 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790952.9823179 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790954.0833049 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790955.1846461 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790956.2860284 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790957.3873582 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790958.4882219 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790959.5915477 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790960.6928699 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790961.7940652 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790962.8956339 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790963.9967833 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790966.4383419 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790967.5394659 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790968.6403968 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790969.7412245 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790970.8421082 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790971.9431071 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790973.0442755 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790974.1456912 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790975.2465603 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790976.3473790 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790977.4487181 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790978.5498891 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790979.6509407 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790980.7522511 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790981.8536520 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790982.9551921 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790984.0564208 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790985.1577303 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790986.2589574 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790987.3591499 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790988.4602749 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790989.5618660 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790990.6635239 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790991.7648592 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790992.8661571 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790993.9674461 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790995.0684569 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790996.1695368 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790997.2699938 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741790998.3715205 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791000.8272572 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791001.9278860 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791003.0288072 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791004.1296291 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791005.2309916 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791006.3325913 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791007.4336352 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791008.5347164 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791009.6359231 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791010.7367980 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791011.8375180 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791012.9384310 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791014.0397370 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791015.1408865 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791016.2423699 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791017.3433676 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791018.4437950 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791019.5449529 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791020.6460297 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791021.7472277 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791022.8486950 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791023.9499350 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791025.0512140 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791026.1523905 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791027.2534311 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791028.3544440 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791029.4551048 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791030.5563498 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791031.6577783 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791034.1151752 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791035.2160263 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791036.3171945 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791037.4186468 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791038.5196917 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791039.6209776 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791040.7220383 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791041.8227992 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791042.9237752 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791044.0245309 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791045.1254566 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791046.2263532 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791047.3272719 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791048.4286115 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791049.5298171 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791050.6303277 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791051.7313933 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791052.8326571 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791053.9337046 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791055.0349913 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791056.1361070 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791057.2376380 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791058.3387995 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791059.4396784 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791060.5405450 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791061.6412706 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791062.7424188 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791063.8440688 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791064.9450686 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791067.4038591 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791068.5051837 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791069.6066773 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791070.7078657 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791071.8089149 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791072.9098978 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791074.0111544 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791075.1121657 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791076.2133758 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791077.3141439 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791078.4156415 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791079.5163262 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791080.6175258 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791081.7185040 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791082.8198659 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791083.9208636 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791085.0220327 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791086.1232829 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791087.2245576 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791088.3252113 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791089.4269166 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791090.5279002 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791091.6290903 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791092.7299194 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791093.8313303 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791094.9328561 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791096.0369813 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791097.1378684 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791098.2386546 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791099.3395987 [dds_udp.parm --synthetic-clock -4] No JSON sensor message received, resending servos
+1741791100.8004856 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1741791100.8071885 [ERROR] [dds_udp.parm --synthetic-clock -4]: process has died [pid 22972, exit code -2, cmd 'ardurover --model json --speedup 1 --slave 0 --sim-address=127.0.0.1 --instance 0 --defaults /mnt/h/01_Unistuff/00_Stuff/02_Master/Thesis/sam-plattform-entwicklung/plattform/install/ardupilot_sitl/share/ardupilot_sitl/config/default_params/rover.parm,/mnt/h/01_Unistuff/00_Stuff/02_Master/Thesis/sam-plattform-entwicklung/plattform/install/ardupilot_sitl/share/ardupilot_sitl/config/default_params/dds_udp.parm --synthetic-clock '].
+1741791100.8074005 [ERROR] [micro_ros_agent-3]: process has died [pid 22970, exit code -2, cmd '/mnt/h/01_Unistuff/00_Stuff/02_Master/Thesis/sam-plattform-entwicklung/plattform/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent udp4 --middleware dds --verbose 4 --port 2019 --ros-args -r __node:=micro_ros_agent -r __ns:=/'].
+1741791100.8078589 [rviz2-8] [INFO] [1741791100.800187895] [rclcpp]: signal_handler(signum=2)
+1741791100.8083930 [robot_state_publisher-6] [INFO] [1741791100.800208037] [rclcpp]: signal_handler(signum=2)
+1741791100.8940697 [mavproxy.py -5] Connection reset or closed by peer on TCP socket
+1741791100.8942976 [mavproxy.py -5] Attempting reconnect
+1741791100.8943629 [mavproxy.py -5] [Errno 111] Connection refused sleeping
+1741791100.8943927 [mavproxy.py -5] Unloading module link
+1741791100.8944454 [mavproxy.py -5] Unloading module log
+1741791100.8945060 [mavproxy.py -5] Unloading module signing
+1741791100.8945642 [mavproxy.py -5] Unloading module wp
+1741791100.8946018 [mavproxy.py -5] Unloading module rally
+1741791100.8948646 [mavproxy.py -5] Unloading module fence
+1741791100.8949490 [mavproxy.py -5] Unloading module ftp
+1741791100.8950043 [mavproxy.py -5] Unloading module param
+1741791100.8950753 [mavproxy.py -5] Unloading module relay
+1741791100.8952248 [mavproxy.py -5] Unloading module tuneopt
+1741791100.8953049 [mavproxy.py -5] Unloading module arm
+1741791100.8953555 [mavproxy.py -5] Unloading module mode
+1741791100.8954279 [mavproxy.py -5] Unloading module calibration
+1741791100.8955064 [mavproxy.py -5] Unloading module rc
+1741791100.8955922 [mavproxy.py -5] Unloading module auxopt
+1741791100.8956733 [mavproxy.py -5] Unloading module misc
+1741791100.8957598 [mavproxy.py -5] Unloading module cmdlong
+1741791100.8958313 [mavproxy.py -5] Unloading module battery
+1741791100.8958941 [mavproxy.py -5] Unloading module terrain
+1741791100.8959572 [mavproxy.py -5] Unloading module output
+1741791100.8960252 [mavproxy.py -5] Unloading module adsb
+1741791100.8960834 [mavproxy.py -5] Unloading module layout
+1741791100.9108872 [INFO] [relay-9]: process has finished cleanly [pid 22982]
+1741791100.9190018 [INFO] [robot_state_publisher-6]: process has finished cleanly [pid 22976]
+1741791100.9253891 [INFO] [parameter_bridge-7]: process has finished cleanly [pid 22978]
+1741791100.9593916 [ERROR] [ruby $(which gz) sim-1]: process has died [pid 22966, exit code -2, cmd 'ruby $(which gz) sim -v4 -s -r /mnt/h/01_Unistuff/00_Stuff/02_Master/Thesis/sam-plattform-entwicklung/plattform/install/ardupilot_gz_gazebo/share/ardupilot_gz_gazebo/worlds/sam_runway.sdf --force-version 8'].
+1741791100.9599352 [INFO] [launch]: process[ruby $(which gz) sim-1] was required: shutting down launched system
+1741791100.9712896 [ERROR] [mavproxy.py -5]: process has died [pid 22974, exit code -2, cmd 'mavproxy.py  --out 127.0.0.1:14550  --out  127.0.0.1:14551  --master tcp:127.0.0.1:5760  --sitl 127.0.0.1:5501  --non-interactive '].
+1741791101.1919107 [ERROR] [rviz2-8]: process has died [pid 22980, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /mnt/h/01_Unistuff/00_Stuff/02_Master/Thesis/sam-plattform-entwicklung/plattform/install/ardupilot_gz_bringup/share/ardupilot_gz_bringup/rviz/sam.rviz --ros-args'].
+1741791101.1996858 [ERROR] [ruby $(which gz) sim-2]: process has died [pid 22968, exit code -2, cmd 'ruby $(which gz) sim -v4 -g --force-version 8'].
+1741791101.1999578 [INFO] [launch]: process[ruby $(which gz) sim-2] was required: shutting down launched system

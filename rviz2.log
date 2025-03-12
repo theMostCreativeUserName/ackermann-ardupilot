@@ -1,0 +1,12 @@
+[INFO] [1741790847.851461314] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1741790847.851568283] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
+[INFO] [1741790848.138185566] [rviz2]: Stereo is NOT SUPPORTED
+[WARN] [1741790857.185375934] [sdformat_urdf]: SDFormat link [base_link] has a <sensor>, but URDF does not support this
+[WARN] [1741790857.185538314] [sdformat_urdf]: SDFormat link [sonar_mid_b] has a <sensor>, but URDF does not support this
+[WARN] [1741790857.185549408] [sdformat_urdf]: SDFormat link [sonar_l] has a <sensor>, but URDF does not support this
+[WARN] [1741790857.185557314] [sdformat_urdf]: SDFormat link [sonar_rb] has a <sensor>, but URDF does not support this
+[WARN] [1741790857.185564555] [sdformat_urdf]: SDFormat link [sonar_r] has a <sensor>, but URDF does not support this
+[WARN] [1741790857.185573181] [sdformat_urdf]: SDFormat link [sonar_lb] has a <sensor>, but URDF does not support this
+[WARN] [1741790857.185580334] [sdformat_urdf]: SDFormat link [lidar] has a <sensor>, but URDF does not support this
+[WARN] [1741790857.185587542] [sdformat_urdf]: SDFormat link [camera] has a <sensor>, but URDF does not support this
+[INFO] [1741791100.800187895] [rclcpp]: signal_handler(signum=2)
